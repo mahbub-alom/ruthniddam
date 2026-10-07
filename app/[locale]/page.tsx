@@ -8,7 +8,6 @@ import { GuaShaSection } from '@/components/home/GuaShaSection';
 import { PressSection } from '@/components/home/PressSection';
 import { PillarsSection } from '@/components/home/PillarsSection';
 import { CommunitySection } from '@/components/home/CommunitySection';
-import { NewsletterSection } from '@/components/home/NewsletterSection';
 import { NewsletterModal } from '@/components/home/NewsletterModal';
 
 export async function generateMetadata({
@@ -60,10 +59,7 @@ export default async function HomePage({
       {/* 8. Communauté: +100K abonnés, feed Instagram & réseaux officiels */}
       <CommunitySection />
 
-      {/* 9. Newsletter Section: Inscription exclusive */}
-      <NewsletterSection locale={locale} />
-
-      {/* 10. Newsletter Modal: Popup confidentielle après interaction */}
+      {/* 9. Newsletter Modal: Popup confidentielle après interaction */}
       <NewsletterModal locale={locale} />
     </div>
   );
